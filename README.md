@@ -1,5 +1,7 @@
 demo video URL : https://drive.google.com/file/d/1eaoEB8SJO-b3ES3PK6lOszcZtCWRKQ4m/view?usp=sharing
 
+Smart contract is kept in app.js as commented code
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
