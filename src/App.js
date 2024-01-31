@@ -100,3 +100,48 @@ function App() {
 }
 
 export default App;
+
+
+
+// pragma solidity ^0.8.20;
+
+// import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
+
+// contract TokenAirdrop {
+//     IERC20 public airdropToken;
+//     uint256 public airdropQuantity;
+//     address public owner;
+
+//     constructor(address _tokenAddress, uint256 _initialAirdropQuantity) {
+//         airdropToken = IERC20(_tokenAddress);
+//         airdropQuantity = _initialAirdropQuantity;
+//         owner = msg.sender; // Set the contract deployer as the owner
+//     }
+
+//     modifier onlyOwner() {
+//         require(msg.sender == owner, "Caller is not the owner");
+//         _;
+//     }
+
+//     function setAirdropToken(address _newTokenAddress) external onlyOwner {
+//         airdropToken = IERC20(_newTokenAddress);
+//     }
+
+//     function setAirdropQuantity(uint256 _newQuantity) external onlyOwner {
+//         airdropQuantity = _newQuantity;
+//     }
+
+//    function executeAirdrop(address[] calldata _recipients) external onlyOwner {
+//     for (uint256 i = 0; i < _recipients.length; i++) {
+//         require(_recipients[i] != address(0), "Invalid recipient address");
+//         airdropToken.transfer(_recipients[i], airdropQuantity);
+//     }
+// }
+
+
+   
+//     function transferOwnership(address newOwner) public onlyOwner {
+//         require(newOwner != address(0), "New owner is the zero address");
+//         owner = newOwner;
+//     }
+// }
